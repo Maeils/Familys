@@ -1,0 +1,31 @@
+Un site mvc PHP/Mysql.
+
+Affichage géré par un swing.
+
+Pages
+	Accueil
+		-> Divers liens vers les autres trucs...
+	News
+		-> News sur ce qu'il se passe dans la ft.
+		-> News à propos des jeux auxquels on joue.
+	Dossiers
+		-> Tuto et aides sur les jeux.
+		-> Informations sur les jeux actuels, futurs...
+	La Family's Team
+		-> Recensement des membres.
+		-> Informations sur les membres (quels jeux, irl...).
+		-> L'historique ridicule (genre Eli a du conquérir le trône).
+	Promotion
+		-> Rapport au gaming = twitch, youtube...
+		-> Rapport à autres = ce que les gens font comme taf...
+	Gaming
+		-> Prévision des évènements pour chaque jeu (donjons, compet et autres).
+		-> Par groupe, les dates d'entraînement et tout.
+		-> Les résultats de chaque truc. Parfois apparaît dans News.
+	Page perso
+		-> Ses informations.
+		-> Ses messages.
+	Contact
+		-> Lien vers le forum + vers une adresse générique de la ft.
+	Forum
+		-> Lien vers le forum actuel.
