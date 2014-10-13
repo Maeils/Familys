@@ -4,10 +4,11 @@
 function securite_bdd($string)
 {
   if (ctype_digit($string)) {
-    $string = intval($string);
+  	$string = intval($string);
   } else {
-    $string = mysql_real_escape_string($string);
-    $string = addcslashes($string, '%_');
+  	$string = stripslashes($string);
+  	$string = mysql_real_escape_string($string);
+  	$string = addcslashes($string, '%_');
   }
         
   return $string;
