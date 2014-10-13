@@ -1,12 +1,13 @@
 <?php
+	include "PHP/traitement/utilitaires.php";
 
 	$url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-	$url = explode('index.php',$url);
-	if(isset($url[1])){
-		$tmp = explode('=',$url[1]);
-		$page = explode('?',$tmp[1]);
-	
-		switch($page[0]){
+	$page = '';
+	$page = get_value_parameter_url($url, 'page');
+		
+	if ($page != '') {
+
+		switch($page){
 			
 			/* Pages simples */
 			case 'accueil':
@@ -16,6 +17,8 @@
 				include "PHP/formulaires/contact.php";
 				break;
 			case 'forum':
+				/* Il faut changer le header. Comme l'index.php a déjà inclu du php générant du
+				html, ce cas va péter une erreur. Chercher du côté de redirect. */
 				header("location: http://www.familys-team.com");
 				break;
 			
@@ -29,7 +32,7 @@
 			case 'recensement':
 				include "PHP/articles/familysteam/recensement.php";
 				break;
-
+	
 			/* Pages de gaming */
 			case 'historique_gaming':
 				include "PHP/articles/gaming/historique_gaming.php";
@@ -66,9 +69,8 @@
 				include "PHP/article/accueil.php";
 				break;
 		}
-	}
-	else{
-		include "PHP/article/accueil.php";
+	} else {
+	include "PHP/article/accueil.php";
 	}
 
 ?>
