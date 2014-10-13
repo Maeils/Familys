@@ -14,7 +14,7 @@
       <label>Gaming</label>
     </li>
   </a>
-  <a href=<?php echo '\"'+url_page('familysteam')+'\"' ?> class="lien_menu_haut">
+  <a href=<?php echo '\"'+url_page('historique')+'\"' ?> class="lien_menu_haut">
     <li class="item">
       <label>La Family's Team</label>
     </li>
