@@ -1,5 +1,6 @@
 <?php
 	include "../traitement/bdd.php";
+	include "../traitement/utilitaires.php";
 	session_start();
 	$_SESSION['pseudo'] = "";
 	$_SESSION['mdp'] = "";
@@ -7,8 +8,8 @@
 	try {
 		$dbh = new PDO('mysql:host='.$host.';dbname='.$bdd, $user, $pwd);
 		
-		$pseudo = $_POST['pseudo'];
-		$mdp = $_POST['mdp'];
+		$pseudo = securite_bdd($_POST['pseudo']);
+		$mdp = securite_bdd($_POST['mdp']);
 		
 		$query = 'select * from Utilisateur where pseudo=\''.$pseudo.'\' and mdp=\''.$mdp.'\'';
 		echo $query;
