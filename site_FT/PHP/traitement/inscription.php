@@ -1,5 +1,6 @@
 <?php
 	include "../traitement/bdd.php";
+	include "../traitement/utilitaires.php";
 	session_start();
 	$_SESSION['pseudo'] = "";
 	$_SESSION['mdp'] = "";
@@ -7,11 +8,11 @@
 	try {
 		$dbh = new PDO('mysql:host='.$host.';dbname='.$bdd, $user, $pwd);
 		
-		$nom = $_POST['nom'];
-		$prenom = $_POST['prenom'];
-		$mail = $_POST['mail'];
-		$pseudo = $_POST['pseudo'];
-		$mdp = $_POST['mdp'];
+		$nom = securite_bdd($_POST['nom']);
+		$prenom = securite_bdd($_POST['prenom']);
+		$mail = securite_bdd($_POST['mail']);
+		$pseudo = securite_bdd($_POST['pseudo']);
+		$mdp = securite_bdd($_POST['mdp']);
 		
 		$query = 'insert into utilisateur(nom, prenom, mail, pseudo, mdp) values(\''.$nom.'\',\''.$prenom.'\',\''.$mail.'\',\''.$pseudo.'\',\''.$mdp.'\')';
 		echo $query;
