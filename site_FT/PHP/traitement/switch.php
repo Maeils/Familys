@@ -1,5 +1,4 @@
 <?php
-	include "PHP/traitement/utilitaires.php";
 
 	$url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 	$page = '';
@@ -11,7 +10,7 @@
 			
 			/* Pages simples */
 			case 'accueil':
-				include "PHP/article/accueil.php";
+				include "PHP/articles/accueil.php";
 				break;
 			case 'contact':
 				include "PHP/formulaires/contact.php";
@@ -66,11 +65,11 @@
 				break;
 				
 			default:
-				include "PHP/article/accueil.php";
+				include "PHP/articles/accueil.php";
 				break;
 		}
 	} else {
-	include "PHP/article/accueil.php";
+	include "PHP/articles/accueil.php";
 	}
 
 ?>
