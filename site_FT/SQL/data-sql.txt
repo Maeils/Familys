@@ -27,3 +27,8 @@ CREATE TABLE IF NOT EXISTS personnage (
 	id_serveur VARCHAR(255) NOT NULL ,
 	PRIMARY KEY id_personnage (id_personnage)
 ) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+
+CREATE TABLE IF NOT EXISTS article (
+	id_news INT NOT NULL AUTO-INCREMENT,
+	PRIMARY KEY id_news (id_news)
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
