@@ -10,10 +10,10 @@
 			
 			/* Pages simples */
 			case 'accueil':
-				include "PHP/articles/accueil.php";
+				include $chemin_articles."accueil.php";
 				break;
 			case 'contact':
-				include "PHP/articles/contact.php";
+				include $chemin_articles."contact.php";
 				break;
 			case 'forum':
 				/* Il faut changer le header. Comme l'index.php a déjà inclu du php générant du
@@ -23,53 +23,56 @@
 			
 			/* Pages de familys team */
 			case 'historique':
-				include "PHP/articles/familysteam/historique.php";
+				include $chemin_familysteam."historique.php";
 				break;
 			case 'profil':
-				include "PHP/articles/familysteam/profil.php";
+				include $chemin_familysteam."profil.php";
 				break;
 			case 'recensement':
-				include "PHP/articles/familysteam/recensement.php";
+				include $chemin_familysteam."recensement.php";
 				break;
 	
 			/* Pages de gaming */
 			case 'historique_gaming':
-				include "PHP/articles/gaming/historique_gaming.php";
+				include $chemin_gaming."historique_gaming.php";
 				break;
 			case 'planning':
-				include "PHP/articles/gaming/planning.php";
+				include $chemin_gaming."planning.php";
 				break;
 			case 'previsions':
-				include "PHP/articles/gaming/previsions.php";
+				include $chemin_gaming."previsions.php";
 				break;
 				
 			/* Pages de news */
 			case 'insideft':
-				include "PHP/articles/news/insideft.php";
+				include $chemin_news."insideft.php";
 				break;
 			case 'jeuxft':
-				include "PHP/articles/news/jeuxft.php";
+				include $chemin_news."jeuxft.php";
+				break;
+			case 'zoom_news':
+				include $chemin_news."zoom_news.php";
 				break;
 				
 			/* Pages persos */
 			case 'infos_perso':
-				include "PHP/articles/perso/infos_perso.php";
+				include $chemin_perso."infos_perso.php";
 				break;
 			case 'messagerie':
-				include "PHP/articles/perso/messagerie.php";
+				include $chemin_perso."messagerie.php";
 				break;
 				
 			/* Pages de promotion */
 			case 'gaming':
-				include "PHP/articles/promotion/gaming.php";
+				include $chemin_promotion."gaming.php";
 				break;
 				
 			default:
-				include "PHP/articles/accueil.php";
+				include $chemin_article."accueil.php";
 				break;
 		}
 	} else {
-	include "PHP/articles/accueil.php";
+	include $chemin_article."accueil.php";
 	}
 
 ?>

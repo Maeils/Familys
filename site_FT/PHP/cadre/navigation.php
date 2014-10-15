@@ -1,31 +1,30 @@
 <div id="div_navigation">
   <ul class="main-nav" id="navigation">
-    <li class="nav_item">
-      <a href=<?php echo url_page('accueil'); ?> class="lien_menu_haut">
-        <label>Home</label>
-      </a>
-    </li>
-    <li class="nav_item">
-      <a href=<?php echo url_page('insideft'); ?> class="lien_menu_haut">
-        <label>News</label>
-      </a>
-    </li>
-    <li class="nav_item">
-      <a href=<?php echo url_page('gaming'); ?> class="lien_menu_haut">
-        <label>Gaming</label>
-      </a>
-    </li>
-    <li class="nav_item">
-      <a href=<?php echo url_page('historique'); ?> class="lien_menu_haut">
-        <label>Family</label>
-      </a>
-    </li>
-    <li class="nav_item">
-      <a href=<?php echo url_page('contact'); ?> class="lien_menu_haut">
-        <label>Contact</label>
-      </a>
-    </li>
+    <a href=<?php echo url_page('accueil'); ?> class="lien_menu_haut">
+      <li class="nav_item">
+        ACCUEIL
+      </li>
+    </a>
+    <a href=<?php echo url_page('insideft'); ?> class="lien_menu_haut">
+      <li class="nav_item">
+        NEWS
+      </li>
+    </a>
+    <a href=<?php echo url_page('gaming'); ?> class="lien_menu_haut">
+      <li class="nav_item">
+        GAMING
+      </li>
+    </a>
+    <a href=<?php echo url_page('historique'); ?> class="lien_menu_haut">
+      <li class="nav_item">
+        FAMILY
+      </li>
+    </a>
+    <a href=<?php echo url_page('contact'); ?> class="lien_menu_haut">
+      <li class="nav_item">
+        CONTACT
+      </li>
+    </a>
   </ul>
+  <div class="fin_float"></div>
 </div>
-
-<div class="fin_float"></div>

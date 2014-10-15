@@ -1,5 +1,20 @@
 <?php
 
+/* constantes utiles */
+$chemin_images_design = "Ressources/images/design/";
+$chemin_images_news = "Ressources/images/news/";
+
+$chemin_php = "PHP/";
+$chemin_articles = $chemin_php."articles/";
+$chemin_familysteam = $chemin_articles."familysteam/";
+$chemin_gaming = $chemin_articles."gaming/";
+$chemin_news = $chemin_articles."news/";
+$chemin_perso = $chemin_articles."perso/";
+$chemin_promotion = $chemin_articles."promotion/";
+$chemin_cadre = $chemin_php."cadres/";
+$chemin_formulaires = $chemin_php."formulaires/";
+$chemin_traitement = $chemin_php."traitement/";
+
 /* fonction qui sécurise $string pour éviter les injections */
 function securite_bdd($string)
 {
