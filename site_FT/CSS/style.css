@@ -7,7 +7,7 @@
 	clear: both;
 }
 
-li {
+ul {
 	list-style-type: none;
 }
 
@@ -22,7 +22,22 @@ a:hover, a:focus, a:active {
   font-weight: bold;
 }
 
+/* Bannière */
+#banniere {
+	height: 390px;
+	background-position: center center;
+	background-image: url(../Ressources/images/banniere.jpg);
+	background-repeat: no-repeat;
+}
+
 /* Style du menu de navigation */
-.item {
+#div_navigation {
+	width: 500px;
+	margin : 0 auto;
+}
+
+.nav_item {
 	float: left;
+	width: 50px;
+	margin: 5px 10px 5px 10px;
 }
