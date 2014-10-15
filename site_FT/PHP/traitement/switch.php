@@ -13,7 +13,7 @@
 				include "PHP/articles/accueil.php";
 				break;
 			case 'contact':
-				include "PHP/formulaires/contact.php";
+				include "PHP/articles/contact.php";
 				break;
 			case 'forum':
 				/* Il faut changer le header. Comme l'index.php a déjà inclu du php générant du
