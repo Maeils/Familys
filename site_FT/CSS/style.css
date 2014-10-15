@@ -1,6 +1,23 @@
- /* Propriétés généraes */
+ /* Propriétés générales */
+@font-face
+{
+	font-family: 'policeturkey' ; 
+	src: url('../Ressources/police/policeturkey.eot') format('eot') , 
+         url('../Ressources/police/policeturkey.woff') format('woff') ,
+         url('../Ressources/police/policeturkey.ttf') format('truetype') ,
+         url('../Ressources/police/policeturkey.svg') format('svg') ;
+}
+
  body {
-	color: black;
+	color: white;
+	background-image: url(../Ressources/images/design/fond_ecran.png);
+}
+
+#body {
+	background-color: rgb(99,115,127);
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
 }
 
 .fin_float {
@@ -14,30 +31,141 @@ ul {
 /* Style des liens */
 a {
   text-decoration: none;
-}
-a:visited {
-  color: #844;
-}
-a:hover, a:focus, a:active {
-  font-weight: bold;
+  color: white;
 }
 
 /* Bannière */
 #banniere {
-	height: 390px;
-	background-position: center center;
-	background-image: url(../Ressources/images/banniere.jpg);
+	height: 200px;
+	width: 960px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.6);
 	background-repeat: no-repeat;
 }
 
 /* Style du menu de navigation */
 #div_navigation {
-	width: 500px;
+	background-image: url(../Ressources/images/design/barre_menu.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 50px;
+	width: 960px;
 	margin : 0 auto;
+	color: white;
+	font-family: 'policeturkey';
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+#navigation {
+	width: 960px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 5px 0 0 0;
 }
 
 .nav_item {
 	float: left;
-	width: 50px;
-	margin: 5px 10px 5px 10px;
+	height: 50px;
+	width: 190px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+/* footer */
+#footer {
+	background-color: rgb(45,53,58);
+	height: 25px;
+	width: 960px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+
+/* Style général des articles */
+.article {
+	margin: 0 auto;
+	width: 95%;
+}
+
+/* Style de l'accueil */
+#accueil_slideshow {
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgb(45,53,58);
+}
+
+.title {
+	color: white;
+	font-family: 'policeturkey';
+	font-size: 20px;
+	background-image: url(../Ressources/images/design/fond_titre.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#accueil_left {
+	float: left;
+	width: 65%;
+}
+
+#accueil_right {
+	float: right;
+	width: 35%;
+}
+
+.contenu {
+	width: 95%;
+	margin: 15px auto;
+	padding: 5px 5px 15px 5px;
+}
+
+.accueil {
+	width: 95%;
+	margin: 15px auto;
+	background-color: rgb(45,53,58);
+}
+
+.news {
+	width: 98%;
+	margin: 15px auto;
+	padding: 10px 4px;
+	border-style: ridge;
+	border-color: black;
+	border-width: 3px;
+}
+
+#contenu_news {
+	width: 95%;
+	margin: 15px auto;
+}
+
+.news_title {
+	font-weight: bold;
+	text-align: center;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+.news_redacteur {
+	text-align: right;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.news_image_bdd {
+	float: left;
+	padding: 0 15px 0 0;
+}
+
+.lien_news_suite {
+	float: right;
+	padding-right: 50px;
 }
