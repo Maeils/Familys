@@ -1,0 +1,28 @@
+ /* Propriétés généraes */
+ body {
+	color: black;
+}
+
+.fin_float {
+	clear: both;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* Style des liens */
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #844;
+}
+a:hover, a:focus, a:active {
+  font-weight: bold;
+}
+
+/* Style du menu de navigation */
+.item {
+	float: left;
+}

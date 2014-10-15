@@ -1,6 +1,6 @@
 <?php
-	include "../traitement/bdd.php";
-	include "../traitement/utilitaires.php";
+	include "./bdd.php";
+	include "./traitement/utilitaires.php";
 	session_start();
 	$_SESSION['pseudo'] = "";
 	$_SESSION['mdp'] = "";

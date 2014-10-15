@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 include "PHP/traitement/utilitaires.php";
 include "PHP/traitement/bdd.php";
 
