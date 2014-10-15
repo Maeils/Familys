@@ -1,6 +1,6 @@
 <?php
-$user = 'root';
-$pwd = '';
+$user = 'admin';
+$pwd = '$adminFAMILYS';
 $host = 'localhost';
-$bdd = 'familysteam';
+$bdd = 'ft_database';
 ?>
