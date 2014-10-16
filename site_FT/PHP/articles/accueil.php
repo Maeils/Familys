@@ -37,6 +37,8 @@
 							<?php
 								try {
 									$dbh = new PDO('mysql:host='.$host.';dbname='.$bdd, $user, $pwd);
+
+									$dbh->query("SET NAMES UTF8"); 
 						
 									$query = 'select * from news';
 

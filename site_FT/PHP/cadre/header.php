@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="fr">
+<html xml:lang="fr" lang="fr">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Site de la Family's Team</title>
   <link rel="stylesheet" href=<?php echo "\"".$chemin_css."style.css\""?>>
   <!-- Ce qu'il faut pour le slider -->
