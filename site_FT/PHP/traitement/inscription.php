@@ -1,6 +1,6 @@
 <?php
-	include "../traitement/bdd.php";
-	include "../traitement/utilitaires.php";
+	include "./bdd.php";
+	include "./t/utilitaires.php";
 	session_start();
 	$_SESSION['pseudo'] = "";
 	$_SESSION['mdp'] = "";
@@ -14,7 +14,7 @@
 		$pseudo = securite_bdd($_POST['pseudo']);
 		$mdp = securite_bdd($_POST['mdp']);
 		
-		$query = 'insert into utilisateur(nom, prenom, mail, pseudo, mdp) values(\''.$nom.'\',\''.$prenom.'\',\''.$mail.'\',\''.$pseudo.'\',\''.$mdp.'\')';
+		$query = 'insert into utilisateur(nom, prenom, mail, pseudo, motdepasse) values(\''.$nom.'\',\''.$prenom.'\',\''.$mail.'\',\''.$pseudo.'\',\''.$mdp.'\')';
 		echo $query;
 		
 		if($reponse = $dbh->exec($query)){
