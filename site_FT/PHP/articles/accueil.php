@@ -93,7 +93,9 @@
 							<img class="logo_titre" src=<?php echo "\"".$chemin_images_design."cercle.png\""?> alt="logo titre"/>
 							YOUTUBE
 						</div>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+						<div id="div_youtube">
+	  						<iframe id="youtube"frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/vzHrjOMfHPY?list=UU2t5bjwHdUX4vM2g8TRDq5g"> </iframe> 
+						</div>
 					</div>
 				</div>
 
