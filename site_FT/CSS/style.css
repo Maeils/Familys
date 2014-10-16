@@ -280,3 +280,11 @@ a:hover, a:active {
 	margin: 0 auto;
 	padding: 15px;
 }
+
+#youtube {
+	width : 95% ;
+}
+
+#div_youtube {
+	text-align: center ;
+}
