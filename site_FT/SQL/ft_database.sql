@@ -2,10 +2,10 @@
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Client :  127.0.0.1
--- Généré le :  Jeu 16 Octobre 2014 à 03:10
--- Version du serveur :  5.6.17
--- Version de PHP :  5.5.12
+-- Host: 127.0.0.1
+-- Generation Time: Oct 16, 2014 at 04:58 PM
+-- Server version: 5.6.17
+-- PHP Version: 5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données :  `ft_database`
+-- Database: `ft_database`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `jeu`
+-- Table structure for table `jeu`
 --
 
 CREATE TABLE IF NOT EXISTS `jeu` (
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `jeu` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `news`
+-- Table structure for table `news`
 --
 
 CREATE TABLE IF NOT EXISTS `news` (
@@ -53,20 +53,20 @@ CREATE TABLE IF NOT EXISTS `news` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
--- Contenu de la table `news`
+-- Dumping data for table `news`
 --
 
 INSERT INTO `news` (`id_news`, `titre`, `image`, `synopsis`, `redacteur`) VALUES
-(1, 'L\'étoile serait en fait cancérigène, une découverte macabre pour Luigi...', 'news1.jpg', '"Putain de merde !" s\'exclame le pauvre Luigi en lisant le journal la veille au matin. Les étoiles sont cancérigènes ? Il en a mangé toute sa vie sans se méfier ! Le jeune homosexuel italien se rue donc rapidement vers l\'hôpital le plus proche, la moustache au vent. A peine arrivé, il agresse un médecin pour qu\'on lui fasse des analyses. Le lendemain, les résultats tombent. Luigi est condamné. à rester le j2. Pour le reste, ça va. C\'est Mario qui bouffe les étoiles. Bien fait pour sa gueule !', 1),
-(2, 'Un réseau de drogues démantelé au royaume champignon !!!', 'news2.jpg', 'Envie d\'un petit champignon ? Besoin d\'un petit pétard ? Hé bien avant hier, il vous fallait contacter un certain "It\'s-a-me !" Mario. Mais dorénavant, vous pouvez vous assoir dessus ! Ce criminel a été arrêté par les forces de l\'ordre. Le brigadier Bowser raconte : \"on a eu un tuyau de son entourage, quelqu\'un de proche, vous savez ?". A ce moment même, on aperçoit la princesse Peach en tenue de cuir qui sort de la chambre du brigadier. "Attend pupuce, j\'arrive..."', 1),
-(3, 'Bob l\'éponge trouvé ivre mort dans une orgie d\'un carrefour parisien...' , 'news3.png', 'C\est avec étonnement que Joséphine, caissière depuis maintenant 56 ans à carrefour, découvre en arrivant au travail un Bob l\'éponge ivre mort : "Je n\ai pas compris tout de suite ce qu\'il se passait... Il était là, par terre, imbibé d\'alcool, entourée d\'une vingtaine d\'autres éponges, complètement nues. Il y avait du produit vaisselle partout !". La caissière, traumatisée à vie, ainsi que son employeur, ont décidé de porter plainte. Le tribunal aura lieu à Bikini Bottom.', 1),
+(1, 'L''étoile serait en fait cancérigène, une découverte macabre pour Luigi...', 'news1.jpg', '"Putain de merde !" s''exclame le pauvre Luigi en lisant le journal la veille au matin. Les étoiles sont cancérigènes ? Il en a mangé toute sa vie sans se méfier ! Le jeune homosexuel italien se rue donc rapidement vers l''hôpital le plus proche, la moustache au vent. A peine arrivé, il agresse un médecin pour qu''on lui fasse des analyses. Le lendemain, les résultats tombent. Luigi est condamné. à rester le j2. Pour le reste, ça va. C''est Mario qui bouffe les étoiles. Bien fait pour sa gueule !', 1),
+(2, 'Un réseau de drogues démantelé au royaume champignon !!!', 'news2.jpg', 'Envie d''un petit champignon ? Besoin d''un petit pétard ? Hé bien avant hier, il vous fallait contacter un certain "It''s-a-me !" Mario. Mais dorénavant, vous pouvez vous assoir dessus ! Ce criminel a été arrêté par les forces de l''ordre. Le brigadier Bowser raconte : "on a eu un tuyau de son entourage, quelqu''un de proche, vous savez ?". A ce moment même, on aperçoit la princesse Peach en tenue de cuir qui sort de la chambre du brigadier. "Attend pupuce, j''arrive..."', 1),
+(3, 'Bob l''éponge trouvé ivre mort dans une orgie d''un carrefour parisien...', 'news3.png', 'Cest avec étonnement que Joséphine, caissière depuis maintenant 56 ans à carrefour, découvre en arrivant au travail un Bob l''éponge ivre mort : "Je nai pas compris tout de suite ce qu''il se passait... Il était là, par terre, imbibé d''alcool, entourée d''une vingtaine d''autres éponges, complètement nues. Il y avait du produit vaisselle partout !". La caissière, traumatisée à vie, ainsi que son employeur, ont décidé de porter plainte. Le tribunal aura lieu à Bikini Bottom.', 1),
 (4, 'Ceci est le titre de la news 4 donc tranquille pète un coup', 'news4.jpg', '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."', 1),
 (5, 'Ceci est le titre de la news 5 donc tranquille pète un coup', 'news5.jpg', '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."', 1);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `personnage`
+-- Table structure for table `personnage`
 --
 
 CREATE TABLE IF NOT EXISTS `personnage` (
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `personnage` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -94,11 +94,31 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Contenu de la table `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `mail`, `nom`, `prenom`, `pseudo`, `motdepasse`) VALUES
 (1, 'florian.chassot@gmail.com', 'Chassot', 'Florian', 'Millambeur', '123456');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `youtube`
+--
+
+CREATE TABLE IF NOT EXISTS `youtube` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(40) CHARACTER SET utf8 NOT NULL COMMENT 'nom de la video',
+  `lien` text CHARACTER SET utf8 NOT NULL COMMENT 'lien de la video',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Table permettant de stocker les différents lien de vidéo youtube' AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `youtube`
+--
+
+INSERT INTO `youtube` (`id`, `nom`, `lien`) VALUES
+(1, 'Video de test', '//www.youtube.com/embed/DcJFdCmN98s');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
