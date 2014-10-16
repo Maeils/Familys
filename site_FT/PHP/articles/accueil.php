@@ -31,7 +31,9 @@
 					<div class="contenu">
 						<div class="title">
 							<img class="logo_titre" src=<?php echo "\"".$chemin_images_design."cercle.png\""?> alt="logo titre"/>
-							NEWS
+							<a href=<?php echo url_page('jeuxft'); ?> class="lien_titre">
+								NEWS
+							</a>
 						</div>
 						<div id="contenu_news">
 							<?php

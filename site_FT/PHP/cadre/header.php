@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="JS/nivo-slider/themes/light/light.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="JS/nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="JS/nivo-slider/themes/bar/bar.css" type="text/css" media="screen" />
+	<!-- Js pour les menus -->
+	<script type="text/javascript" src=<?php echo "\"".$chemin_js."menus.js\""; ?> ></script>
 </head>
 
 <body>

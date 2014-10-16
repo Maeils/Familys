@@ -2,6 +2,7 @@
 
 /* constantes utiles */
 $chemin_css = "CSS/";
+$chemin_js = "JS/";
 
 $chemin_images_design = "Ressources/images/design/";
 $chemin_images_news = "Ressources/images/news/";

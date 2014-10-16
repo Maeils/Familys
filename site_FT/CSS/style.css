@@ -124,6 +124,33 @@ a:hover, a:active {
 	padding-right: 1px;
 }
 
+#navigation li ul { 
+        position: absolute;
+        left: -999em;
+}
+
+#navigation li:hover ul ul, #navigation li.sfhover ul ul {
+        left: -999em;
+}
+
+#navigation li:hover ul, #navigation li li:hover ul, #navigation li.sfhover ul, #navigation li li.sfhover u l{
+        left: auto;
+        min-height: 0;
+}
+
+.sous_navigation>li {
+	background-color: pink;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin : 0 auto;
+	color: white;
+	font-family: 'policeturkey';
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+
+
 /* footer */
 #footer {
 	background-color: rgb(45,53,58);
@@ -174,7 +201,7 @@ a:hover, a:active {
 	padding: 5px 5px 15px 5px;
 }
 
-.accueil {
+.accueil, .contact {
 	width: 95%;
 	margin: 15px auto;
 	background-color: rgb(45,53,58);
@@ -220,4 +247,24 @@ a:hover, a:active {
 	float: right;
 	padding-right: 50px;
 	font-size: 12px;
+}
+
+/* Style du contact */
+#contact_gauche {
+	float: left;
+}
+
+#contact_droite {
+	float: right;
+}
+
+#contact_bas {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.champs_contact {
+	display: block;
+	margin: 0 auto;
+	padding: 15px;
 }

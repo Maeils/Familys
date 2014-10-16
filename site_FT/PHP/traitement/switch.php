@@ -44,6 +44,9 @@
 				break;
 				
 			/* Pages de news */
+			case 'news':
+				include $chemin_news."news.php";
+				break;
 			case 'insideft':
 				include $chemin_news."insideft.php";
 				break;

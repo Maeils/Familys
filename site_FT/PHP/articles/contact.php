@@ -1,1 +1,5 @@
-<h1> CONTACT </h1>
+
+
+<?php
+	include($chemin_formulaires.'contact.php');
+?>
