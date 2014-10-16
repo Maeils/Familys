@@ -16,5 +16,9 @@
 <body>
 	<div id="banniere">
 		<img id="logo_ft" src=<?php echo "\"".$chemin_images_design."embleme.png\"" ?> alt="logo FT"/>
+		<div id="banniere_ft">
+			<img id="ft" src=<?php echo "\"".$chemin_images_design."ft.png\"" ?> alt="ft"/>
+		</div>
+		<div class="fin_float"></div>
 	</div>
 	<div id="body">

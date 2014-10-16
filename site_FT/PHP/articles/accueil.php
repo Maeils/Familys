@@ -1,6 +1,6 @@
 		<div id="wrapper">
 
-			<div class="slider-wrapper theme-bar">
+			<div class="slider-wrapper theme-dark">
 
 				<div id="slider" class="nivoSlider">
 					<!--  Images to slide through.  -->

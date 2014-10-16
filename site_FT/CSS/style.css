@@ -49,8 +49,8 @@ blockquote, q {
 }
 
 .slider-wrapper { 
-	width: 80%; 
-	margin: 100px auto;
+	width: 90%; 
+	margin: 20px auto;
 }
 
 .clear {
@@ -79,6 +79,17 @@ a:hover, a:active {
 	margin: 0 auto;
 	background-color: rgba(0,0,0,0.6);
 	background-repeat: no-repeat;
+}
+
+#logo_ft {
+	float: left;
+}
+
+#banniere_ft {
+	width: 600px;
+	height: 100%;
+	margin: 0 30%;
+	padding:5%;
 }
 
 /* Style du menu de navigation */
