@@ -94,7 +94,18 @@
 							YOUTUBE
 						</div>
 						<div id="div_youtube">
-	  						<iframe id="youtube"frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/vzHrjOMfHPY?list=UU2t5bjwHdUX4vM2g8TRDq5g"> </iframe> 
+							<?php
+								try {
+									$dbh = new PDO('mysql:host='.$host.';dbname='.$bdd, $user, $pwd);	
+									$query = "select nom, lien from youtube ORDER BY 'ID' desc LIMIT 1";
+									
+									$response3 = $dbh->query($query);
+									$youtube = $response3->fetch();
+								} catch (Exception $e) {
+								die('Erreur : ' . $e->getMessage());
+								}
+							?>
+	  						<iframe id="youtube" allowfullscreen="" src=<?php echo $youtube[1]; ?>> </iframe> 
 						</div>
 					</div>
 				</div>
