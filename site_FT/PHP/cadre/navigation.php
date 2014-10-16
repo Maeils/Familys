@@ -18,10 +18,25 @@
       <a href=<?php echo url_page('gaming'); ?> class="lien_menu_haut">
         GAMING
       </a>
+      <ul id="sous_gaming" class="sous_navigation">
+        <li class="sous_gaming"><a href=<?php echo url_page('historique_gaming'); ?>>Historique</a></li>
+        <li class="sous_gaming"><a href=<?php echo url_page('planning'); ?>>Planning</a></li>
+        <li class="sous_gaming"><a href=<?php echo url_page('previsions'); ?>>Previsions</a></li>
+      </ul>
     </li>
     <li class="nav_item">
       <a href=<?php echo url_page('historique'); ?> class="lien_menu_haut">
         FAMILY
+      </a>
+      <ul id="sous_familys" class="sous_navigation">
+        <li class="sous_familys"><a href=<?php echo url_page('historique'); ?>>Historique</a></li>
+        <li class="sous_familys"><a href=<?php echo url_page('profil'); ?>>Profil</a></li>
+        <li class="sous_familys"><a href=<?php echo url_page('recensement'); ?>>Recensement</a></li>
+      </ul>
+    </li>
+    <li class="nav_item">
+      <a href=<?php echo url_page('promotion'); ?> class="lien_menu_haut">
+        PROMO
       </a>
     </li>
     <li class="nav_item">

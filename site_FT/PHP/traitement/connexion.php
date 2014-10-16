@@ -1,6 +1,6 @@
 <?php
 	include "./bdd.php";
-	include "./traitement/utilitaires.php";
+	include "./utilitaires.php";
 	session_start();
 	$_SESSION['pseudo'] = "";
 	$_SESSION['mdp'] = "";
@@ -11,17 +11,17 @@
 		$pseudo = securite_bdd($_POST['pseudo']);
 		$mdp = securite_bdd($_POST['mdp']);
 		
-		$query = 'select * from Utilisateur where pseudo=\''.$pseudo.'\' and mdp=\''.$mdp.'\'';
-		echo $query;
+		$query = 'select * from user where pseudo=\''.$pseudo.'\' and motdepasse=\''.$mdp.'\'';
 		
-		$reponse = $dbh->query($query);
-		
-		if($ligne = $reponse->fetch()){
+		$response = $dbh->query($query);
+		$user = $response->fetch();
+
+		if(isset($user) AND $user){
 			$_SESSION['pseudo'] = $pseudo;
 			$_SESSION['mdp'] = $mdp;
 		}
 
-		$reponse->closeCursor();
+		$response->closeCursor();
 		
 		$dbh = null;
 	} catch (Exception $e) {

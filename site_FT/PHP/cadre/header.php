@@ -17,9 +17,30 @@
 
 <body>
 	<div id="banniere">
-		<img id="logo_ft" src=<?php echo "\"".$chemin_images_design."embleme.png\"" ?> alt="logo FT"/>
-		<div id="banniere_ft">
+		<img id="logo_ft" class="banniere" src=<?php echo "\"".$chemin_images_design."embleme.png\"" ?> alt="logo FT"/>
+		<div id="banniere_ft" class="banniere">
 			<img id="ft" src=<?php echo "\"".$chemin_images_design."ft.png\"" ?> alt="ft"/>
+		</div>
+		<!-- connexion représente le cadre de connexion -->
+		<div id="connexion_deconnexion" class="banniere">
+			<?php
+				if((!(isset($_SESSION['pseudo']))) || ($_SESSION['pseudo'] == "")){
+					echo '<div id="connexion">
+						<form action="php/traitement/connexion.php" method="post" name="connexion" id="connexion">
+							<p>pseudo : <input type="text" size="10" maxlength="30" name="pseudo"/></p>
+							<p>mdp : <input type="text" size="10" maxlength="30" name="mdp"/></p>
+							<p id="boutton"><input type="submit" value="connexion"/></p>
+						</form>
+						</div>';
+				} else {
+					echo '<div id="deconnexion">
+						<p>Bonjour '.$_SESSION['pseudo'].'</p>
+						<form action="php/traitement/deconnexion.php" method="post" name="deconnexion" id="deconnexion">
+							<p><input type="submit" value="deconnexion"/></p>
+						</form>
+						</div>';
+				}
+			?>
 		</div>
 		<div class="fin_float"></div>
 	</div>

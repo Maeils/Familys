@@ -26,7 +26,6 @@ function securite_bdd($string)
   	$string = intval($string);
   } else {
   	$string = stripslashes($string);
-  	$string = mysql_real_escape_string($string);
   	$string = addcslashes($string, '%_');
   }
         

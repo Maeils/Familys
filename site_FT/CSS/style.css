@@ -81,15 +81,27 @@ a:hover, a:active {
 	background-repeat: no-repeat;
 }
 
-#logo_ft {
+.banniere {
 	float: left;
 }
 
-#banniere_ft {
-	width: 600px;
+#logo_ft {
+	width: 30%;
 	height: 100%;
-	margin: 0 30%;
-	padding:5%;
+}
+
+#banniere_ft {
+	width: 40%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 5% 0;
+}
+
+#connexion_deconnexion {
+	float: right;
+	width: 30%;
+	height: 100%;
+	padding: 5% 0;
 }
 
 /* Style du menu de navigation */
