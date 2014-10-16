@@ -1,8 +1,11 @@
 <?php
 
 /* constantes utiles */
+$chemin_css = "CSS/";
+
 $chemin_images_design = "Ressources/images/design/";
 $chemin_images_news = "Ressources/images/news/";
+$chemin_images_slider = "Ressources/images/slider/";
 
 $chemin_php = "PHP/";
 $chemin_articles = $chemin_php."articles/";

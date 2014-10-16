@@ -68,11 +68,11 @@
 				break;
 				
 			default:
-				include $chemin_article."accueil.php";
+				include $chemin_articles."accueil.php";
 				break;
 		}
 	} else {
-	include $chemin_article."accueil.php";
+	include $chemin_articles."accueil.php";
 	}
 
 ?>
