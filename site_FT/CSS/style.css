@@ -87,21 +87,21 @@ a:hover, a:active {
 
 #logo_ft {
 	width: 30%;
-	height: 100%;
+	height: 80%;
 }
 
 #banniere_ft {
 	width: 40%;
-	height: 100%;
+	height: 80%;
 	margin: 0 auto;
-	padding: 5% 0;
+	padding: 2% 0;
 }
 
 #connexion_deconnexion {
 	float: right;
 	width: 30%;
-	height: 100%;
-	padding: 5% 0;
+	height: 80%;
+	padding: 2% 0;
 }
 
 /* Style du menu de navigation */
