@@ -15,7 +15,7 @@
       </ul>
     </li>
     <li class="nav_item">
-      <a href=<?php echo url_page('gaming'); ?> class="lien_menu_haut">
+      <a href=<?php echo url_page('historique_gaming'); ?> class="lien_menu_haut">
         GAMING
       </a>
       <ul id="sous_gaming" class="sous_navigation">
