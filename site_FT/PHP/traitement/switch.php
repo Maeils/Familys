@@ -66,8 +66,8 @@
 				break;
 				
 			/* Pages de promotion */
-			case 'gaming':
-				include $chemin_promotion."gaming.php";
+			case 'promotion':
+				include $chemin_promotion."promotion.php";
 				break;
 				
 			default:

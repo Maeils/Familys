@@ -1,5 +1,5 @@
 <?php
-$user = 'admin';
+$user = 'adminFT';
 $pwd = '$adminFAMILYS';
 $host = 'localhost';
 $bdd = 'ft_database';
