@@ -27,6 +27,7 @@ function securite_bdd($string)
   } else {
   	$string = stripslashes($string);
   	$string = addcslashes($string, '%_');
+  	$string = mysql_real_escape_string($string);
   }
         
   return $string;
